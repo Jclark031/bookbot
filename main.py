@@ -1,11 +1,9 @@
 with open("books/frankenstein.txt") as f:
     file_contents = f.read()
-    #print(file_contents)
 # prints entire novel
 def word_count(words):
     words_list = words.split()
     word_count = len(words_list)
-    print (word_count)
     return word_count
 #returns word count
 word_count(file_contents)
@@ -20,7 +18,6 @@ def character_count(count):
             characters[char] = 1
     return characters
 char_counts = character_count(file_contents)
-print(char_counts)
 # creates a dictionary of each individual character
 
 def sort_on(characters):
